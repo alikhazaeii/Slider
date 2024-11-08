@@ -34,7 +34,7 @@ i {
   background-image: linear-gradient(black, white, black);
   flex-wrap: wrap;
   align-items: center;
-  filter: blur(10px);
+  filter: blur(20px);
   justify-content: space-around;
 
   >img {
