@@ -1,0 +1,218 @@
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  position: absolute;
+  font-size: 100px;
+  transition: .4s;
+
+  &:hover {
+    color: red;
+  }
+
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  background-image: linear-gradient(black, white, black);
+  flex-wrap: wrap;
+  align-items: center;
+  filter: blur(10px);
+  justify-content: space-around;
+
+  >img {
+    width: 18%;
+    height: 20%;
+    object-fit: cover;
+    border-radius: 5px;
+
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  background: #000;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper {
+  width: 800px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+
+  /* position: absolute; */
+  /* bottom: 0; */
+
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+
+  >h6 {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    position: absolute;
+    color: rgb(255, 2, 2);
+    text-transform: capitalize;
+    left: 20px;
+    top: 10px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    font-size: 20px;
+
+  }
+}
+
+.mySwiper2 {
+  height: 50%;
+  width: 50%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+
+
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.2;
+  filter: blur(2px);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+  filter: none;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  scale: .5;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 385px;
+  bottom: 200px;
+  z-index: 10;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: red;
+  font-size: 20px;
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: red;
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+  filter: blur(1px);
+}
+
+
+h1 {
+  color: wheat;     
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100vh;
+  position: absolute;
+  top: -280px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  font-size: 30px;
+
+}
+
+h5 {
+  opacity: 0;
+  transition: all .6s ease linear;
+  transform: translatex(200px);
+  display: inline;
+  background: wheat;
+}
+
+h5.fade {
+  opacity: 1;
+  transform: translatex(0px);
+  background: red;
+  font-size: 30px;
+  padding: 10px 1px;
+}
