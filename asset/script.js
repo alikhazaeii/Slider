@@ -54,7 +54,7 @@ swiperSlide[9].children[0].innerHTML = 'porsche taycan '
 
 /////////////////////////////font deisgn//////////////////////////
 
-setInterval(() => {
+ let intervalId = setInterval(() => {
   const text = document.querySelector('.fancy')
   console.log(text);
   const strText = text.textContent
@@ -79,5 +79,9 @@ setInterval(() => {
       timer = null
     }
   }
-}, 3100);
+  clearInterval(intervalId)
+
+}, 5000);
+
+
 
